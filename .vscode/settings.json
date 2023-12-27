@@ -1,0 +1,17 @@
+{
+  "java.home": "/path/to/java/home",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.test.config": {
+    "workingDirectory": "${workspaceFolder}",
+    "classpath": [
+      "${workspaceFolder}/target/classes",
+      "${workspaceFolder}/target/test-classes"
+    ],
+    "env": {
+      "SPRING_PROFILES_ACTIVE": "test"
+    },
+    "args": [
+      "-Dspring.profiles.active=test"
+    ]
+  }
+}
